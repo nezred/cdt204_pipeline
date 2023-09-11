@@ -1,0 +1,12 @@
+*.o
+bin/
+*.DS_Store*
+.vscode/
+*.zip
+Traces/test_basic_program.html
+Traces/test_branch_false.html
+Traces/test_branch_true.html
+Traces/test_forwarding_alternating.html
+Traces/test_forwarding_loads.html
+Traces/test_forwarding_simple.html
+Traces/test_jump_instruction.html
