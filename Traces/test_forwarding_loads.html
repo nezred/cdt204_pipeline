@@ -1,0 +1,576 @@
+<html>
+<head>
+<style>
+body { font-family: arial, sans; }
+</style>
+</head>
+<body>
+<table><tr valign=top>
+<td>
+<table rules=groups frame=box width="100%">
+<thead><tr><th colspan=3 align=left>Cycle 0 (0 retired)</th> </tr></thead>
+<tbody>
+<tr><td nowrap>IF stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>addi $s0, $zero, 15</code> (line 7)&nbsp;</td></tr>
+<tr><td/> <td nowrap>PC:&nbsp;</td> <td nowrap>0x400000&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>ID stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (generated)&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>Ex stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (generated)&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rs</i> value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rt</i> value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap>Immediate value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>Mem stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (generated)&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rt</i> value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap>ALU result:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap>Zero:&nbsp;</td> <td nowrap>0&nbsp;</td></tr>
+<tr><td/> <td nowrap>Branch target:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>WB stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (generated)&nbsp;</td></tr>
+<tr><td/> <td nowrap>Result:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+</tbody>
+</table><p/>
+<table rules=groups frame=box width="100%">
+<thead><tr><th colspan=8 align=left nowrap>Register File</th></tr></thead>
+<tbody>
+<tr><td nowrap>R0 (zero)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R8 (t0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R16 (s0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R24 (t8)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R1 (at)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R9 (t1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R17 (s1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R25 (t9)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R2 (v0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R10 (t2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R18 (s2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R26 (k0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R3 (v1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R11 (t3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R19 (s3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R27 (k1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R4 (a0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R12 (t4)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R20 (s4)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R28 (gp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R5 (a1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R13 (t5)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R21 (s5)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R29 (sp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R6 (a2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R14 (t6)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R22 (s6)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R30 (fp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R7 (a3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R15 (t7)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R23 (s7)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R31 (ra)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+</tbody>
+</table>
+</td> <td>&nbsp;</td>
+<td>
+<table rules=groups frame=box width="100%">
+<thead><tr><th colspan=3 align=left>Cycle 1 (0 retired)</th> </tr></thead>
+<tbody>
+<tr><td nowrap>IF stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>addi $s2, $zero, 0</code> (line 8)&nbsp;</td></tr>
+<tr><td/> <td nowrap>PC:&nbsp;</td> <td nowrap>0x400004&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>ID stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>addi $s0, $zero, 15</code> (line 7)&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>Ex stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (generated)&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rs</i> value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rt</i> value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap>Immediate value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>Mem stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (generated)&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rt</i> value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap>ALU result:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap>Zero:&nbsp;</td> <td nowrap>0&nbsp;</td></tr>
+<tr><td/> <td nowrap>Branch target:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>WB stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (generated)&nbsp;</td></tr>
+<tr><td/> <td nowrap>Result:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+</tbody>
+</table><p/>
+<table rules=groups frame=box width="100%">
+<thead><tr><th colspan=8 align=left nowrap>Register File</th></tr></thead>
+<tbody>
+<tr><td nowrap>R0 (zero)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R8 (t0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R16 (s0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R24 (t8)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R1 (at)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R9 (t1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R17 (s1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R25 (t9)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R2 (v0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R10 (t2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R18 (s2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R26 (k0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R3 (v1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R11 (t3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R19 (s3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R27 (k1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R4 (a0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R12 (t4)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R20 (s4)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R28 (gp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R5 (a1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R13 (t5)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R21 (s5)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R29 (sp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R6 (a2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R14 (t6)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R22 (s6)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R30 (fp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R7 (a3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R15 (t7)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R23 (s7)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R31 (ra)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+</tbody>
+</table>
+</td> <td>&nbsp;</td>
+<td>
+<table rules=groups frame=box width="100%">
+<thead><tr><th colspan=3 align=left>Cycle 2 (0 retired)</th> </tr></thead>
+<tbody>
+<tr><td nowrap>IF stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (line 9)&nbsp;</td></tr>
+<tr><td/> <td nowrap>PC:&nbsp;</td> <td nowrap>0x400008&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>ID stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>addi $s2, $zero, 0</code> (line 8)&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>Ex stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>addi $s0, $zero, 15</code> (line 7)&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rs</i> value:&nbsp;</td> <td nowrap>0&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rt</i> value:&nbsp;</td> <td nowrap>0&nbsp;</td></tr>
+<tr><td/> <td nowrap>Immediate value:&nbsp;</td> <td nowrap>15&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>Mem stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (generated)&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rt</i> value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap>ALU result:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap>Zero:&nbsp;</td> <td nowrap>0&nbsp;</td></tr>
+<tr><td/> <td nowrap>Branch target:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>WB stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (generated)&nbsp;</td></tr>
+<tr><td/> <td nowrap>Result:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+</tbody>
+</table><p/>
+<table rules=groups frame=box width="100%">
+<thead><tr><th colspan=8 align=left nowrap>Register File</th></tr></thead>
+<tbody>
+<tr><td nowrap>R0 (zero)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R8 (t0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R16 (s0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R24 (t8)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R1 (at)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R9 (t1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R17 (s1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R25 (t9)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R2 (v0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R10 (t2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R18 (s2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R26 (k0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R3 (v1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R11 (t3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R19 (s3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R27 (k1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R4 (a0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R12 (t4)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R20 (s4)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R28 (gp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R5 (a1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R13 (t5)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R21 (s5)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R29 (sp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R6 (a2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R14 (t6)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R22 (s6)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R30 (fp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R7 (a3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R15 (t7)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R23 (s7)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R31 (ra)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+</tbody>
+</table>
+</td> <td>&nbsp;</td>
+<td>
+<table rules=groups frame=box width="100%">
+<thead><tr><th colspan=3 align=left>Cycle 3 (0 retired)</th> </tr></thead>
+<tbody>
+<tr><td nowrap>IF stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>lw $s1, 268435456($zero)</code> (line 10)&nbsp;</td></tr>
+<tr><td/> <td nowrap>PC:&nbsp;</td> <td nowrap>0x40000C&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>ID stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (line 9)&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>Ex stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>addi $s2, $zero, 0</code> (line 8)&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rs</i> value:&nbsp;</td> <td nowrap>0&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rt</i> value:&nbsp;</td> <td nowrap>0&nbsp;</td></tr>
+<tr><td/> <td nowrap>Immediate value:&nbsp;</td> <td nowrap>0&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>Mem stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>addi $s0, $zero, 15</code> (line 7)&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rt</i> value:&nbsp;</td> <td nowrap>0&nbsp;</td></tr>
+<tr><td/> <td nowrap>ALU result:&nbsp;</td> <td nowrap>15&nbsp;</td></tr>
+<tr><td/> <td nowrap>Zero:&nbsp;</td> <td nowrap>0&nbsp;</td></tr>
+<tr><td/> <td nowrap>Branch target:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>WB stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (generated)&nbsp;</td></tr>
+<tr><td/> <td nowrap>Result:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+</tbody>
+</table><p/>
+<table rules=groups frame=box width="100%">
+<thead><tr><th colspan=8 align=left nowrap>Register File</th></tr></thead>
+<tbody>
+<tr><td nowrap>R0 (zero)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R8 (t0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R16 (s0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R24 (t8)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R1 (at)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R9 (t1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R17 (s1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R25 (t9)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R2 (v0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R10 (t2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R18 (s2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R26 (k0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R3 (v1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R11 (t3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R19 (s3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R27 (k1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R4 (a0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R12 (t4)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R20 (s4)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R28 (gp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R5 (a1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R13 (t5)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R21 (s5)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R29 (sp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R6 (a2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R14 (t6)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R22 (s6)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R30 (fp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R7 (a3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R15 (t7)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R23 (s7)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R31 (ra)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+</tbody>
+</table>
+</td> <td>&nbsp;</td>
+<td>
+<table rules=groups frame=box width="100%">
+<thead><tr><th colspan=3 align=left>Cycle 4 (0 retired)</th> </tr></thead>
+<tbody>
+<tr><td nowrap>IF stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>and $s2, $s0, $s1</code> (line 11)&nbsp;</td></tr>
+<tr><td/> <td nowrap>PC:&nbsp;</td> <td nowrap>0x400010&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>ID stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>lw $s1, 268435456($zero)</code> (line 10)&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>Ex stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (line 9)&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rs</i> value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rt</i> value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap>Immediate value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>Mem stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>addi $s2, $zero, 0</code> (line 8)&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rt</i> value:&nbsp;</td> <td nowrap>0&nbsp;</td></tr>
+<tr><td/> <td nowrap>ALU result:&nbsp;</td> <td nowrap>0&nbsp;</td></tr>
+<tr><td/> <td nowrap>Zero:&nbsp;</td> <td nowrap>1&nbsp;</td></tr>
+<tr><td/> <td nowrap>Branch target:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>WB stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>addi $s0, $zero, 15</code> (line 7)&nbsp;</td></tr>
+<tr><td/> <td nowrap>Result:&nbsp;</td> <td nowrap>15&nbsp;</td></tr>
+</tbody>
+</table><p/>
+<table rules=groups frame=box width="100%">
+<thead><tr><th colspan=8 align=left nowrap>Register File</th></tr></thead>
+<tbody>
+<tr><td nowrap>R0 (zero)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R8 (t0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R16 (s0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R24 (t8)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R1 (at)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R9 (t1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R17 (s1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R25 (t9)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R2 (v0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R10 (t2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R18 (s2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R26 (k0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R3 (v1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R11 (t3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R19 (s3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R27 (k1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R4 (a0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R12 (t4)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R20 (s4)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R28 (gp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R5 (a1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R13 (t5)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R21 (s5)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R29 (sp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R6 (a2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R14 (t6)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R22 (s6)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R30 (fp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R7 (a3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R15 (t7)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R23 (s7)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R31 (ra)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+</tbody>
+</table>
+</td> <td>&nbsp;</td>
+<td>
+<table rules=groups frame=box width="100%">
+<thead><tr><th colspan=3 align=left>Cycle 5 (1 retired)</th> </tr></thead>
+<tbody>
+<tr><td nowrap>IF stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>addi $v0, $zero, 10</code> (line 13)&nbsp;</td></tr>
+<tr><td/> <td nowrap>PC:&nbsp;</td> <td nowrap>0x400014&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>ID stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>and $s2, $s0, $s1</code> (line 11)&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>Ex stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>lw $s1, 268435456($zero)</code> (line 10)&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rs</i> value:&nbsp;</td> <td nowrap>0&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rt</i> value:&nbsp;</td> <td nowrap>0&nbsp;</td></tr>
+<tr><td/> <td nowrap>Immediate value:&nbsp;</td> <td nowrap>268435456&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>Mem stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (line 9)&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rt</i> value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap>ALU result:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap>Zero:&nbsp;</td> <td nowrap>0&nbsp;</td></tr>
+<tr><td/> <td nowrap>Branch target:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>WB stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>addi $s2, $zero, 0</code> (line 8)&nbsp;</td></tr>
+<tr><td/> <td nowrap>Result:&nbsp;</td> <td nowrap>0&nbsp;</td></tr>
+</tbody>
+</table><p/>
+<table rules=groups frame=box width="100%">
+<thead><tr><th colspan=8 align=left nowrap>Register File</th></tr></thead>
+<tbody>
+<tr><td nowrap>R0 (zero)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R8 (t0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R16 (s0)&nbsp;</td> <td nowrap>= 15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R24 (t8)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R1 (at)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R9 (t1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R17 (s1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R25 (t9)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R2 (v0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R10 (t2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R18 (s2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R26 (k0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R3 (v1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R11 (t3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R19 (s3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R27 (k1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R4 (a0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R12 (t4)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R20 (s4)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R28 (gp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R5 (a1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R13 (t5)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R21 (s5)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R29 (sp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R6 (a2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R14 (t6)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R22 (s6)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R30 (fp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R7 (a3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R15 (t7)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R23 (s7)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R31 (ra)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+</tbody>
+</table>
+</td> <td>&nbsp;</td>
+<td>
+<table rules=groups frame=box width="100%">
+<thead><tr><th colspan=3 align=left>Cycle 6 (2 retired)</th> </tr></thead>
+<tbody>
+<tr><td nowrap>IF stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>addi $v0, $zero, 10</code> (line 13)&nbsp;</td></tr>
+<tr><td/> <td nowrap>PC:&nbsp;</td> <td nowrap>0x400014&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>ID stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>and $s2, $s0, $s1</code> (line 11)&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>Ex stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (generated)&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rs</i> value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rt</i> value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap>Immediate value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>Mem stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>lw $s1, 268435456($zero)</code> (line 10)&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rt</i> value:&nbsp;</td> <td nowrap>0&nbsp;</td></tr>
+<tr><td/> <td nowrap>ALU result:&nbsp;</td> <td nowrap>268435456&nbsp;</td></tr>
+<tr><td/> <td nowrap>Zero:&nbsp;</td> <td nowrap>0&nbsp;</td></tr>
+<tr><td/> <td nowrap>Branch target:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>WB stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (line 9)&nbsp;</td></tr>
+<tr><td/> <td nowrap>Result:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+</tbody>
+</table><p/>
+<table rules=groups frame=box width="100%">
+<thead><tr><th colspan=8 align=left nowrap>Register File</th></tr></thead>
+<tbody>
+<tr><td nowrap>R0 (zero)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R8 (t0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R16 (s0)&nbsp;</td> <td nowrap>= 15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R24 (t8)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R1 (at)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R9 (t1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R17 (s1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R25 (t9)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R2 (v0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R10 (t2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R18 (s2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R26 (k0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R3 (v1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R11 (t3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R19 (s3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R27 (k1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R4 (a0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R12 (t4)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R20 (s4)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R28 (gp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R5 (a1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R13 (t5)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R21 (s5)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R29 (sp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R6 (a2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R14 (t6)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R22 (s6)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R30 (fp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R7 (a3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R15 (t7)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R23 (s7)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R31 (ra)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+</tbody>
+</table>
+</td> <td>&nbsp;</td>
+<td>
+<table rules=groups frame=box width="100%">
+<thead><tr><th colspan=3 align=left>Cycle 7 (2 retired)</th> </tr></thead>
+<tbody>
+<tr><td nowrap>IF stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>syscall</code> (line 14)&nbsp;</td></tr>
+<tr><td/> <td nowrap>PC:&nbsp;</td> <td nowrap>0x400018&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>ID stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>addi $v0, $zero, 10</code> (line 13)&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>Ex stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>and $s2, $s0, $s1</code> (line 11)&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rs</i> value:&nbsp;</td> <td nowrap>15&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rt</i> value:&nbsp;</td> <td nowrap>15&nbsp;</td></tr>
+<tr><td/> <td nowrap>Immediate value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>Mem stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (generated)&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rt</i> value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap>ALU result:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap>Zero:&nbsp;</td> <td nowrap>0&nbsp;</td></tr>
+<tr><td/> <td nowrap>Branch target:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>WB stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>lw $s1, 268435456($zero)</code> (line 10)&nbsp;</td></tr>
+<tr><td/> <td nowrap>Result:&nbsp;</td> <td nowrap>15&nbsp;</td></tr>
+</tbody>
+</table><p/>
+<table rules=groups frame=box width="100%">
+<thead><tr><th colspan=8 align=left nowrap>Register File</th></tr></thead>
+<tbody>
+<tr><td nowrap>R0 (zero)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R8 (t0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R16 (s0)&nbsp;</td> <td nowrap>= 15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R24 (t8)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R1 (at)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R9 (t1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R17 (s1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R25 (t9)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R2 (v0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R10 (t2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R18 (s2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R26 (k0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R3 (v1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R11 (t3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R19 (s3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R27 (k1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R4 (a0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R12 (t4)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R20 (s4)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R28 (gp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R5 (a1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R13 (t5)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R21 (s5)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R29 (sp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R6 (a2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R14 (t6)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R22 (s6)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R30 (fp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R7 (a3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R15 (t7)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R23 (s7)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R31 (ra)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+</tbody>
+</table>
+</td> <td>&nbsp;</td>
+<td>
+<table rules=groups frame=box width="100%">
+<thead><tr><th colspan=3 align=left>Cycle 8 (3 retired)</th> </tr></thead>
+<tbody>
+<tr><td nowrap>IF stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (generated)&nbsp;</td></tr>
+<tr><td/> <td nowrap>PC:&nbsp;</td> <td nowrap>0x40001C&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>ID stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>syscall</code> (line 14)&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>Ex stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>addi $v0, $zero, 10</code> (line 13)&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rs</i> value:&nbsp;</td> <td nowrap>0&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rt</i> value:&nbsp;</td> <td nowrap>0&nbsp;</td></tr>
+<tr><td/> <td nowrap>Immediate value:&nbsp;</td> <td nowrap>10&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>Mem stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>and $s2, $s0, $s1</code> (line 11)&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rt</i> value:&nbsp;</td> <td nowrap>15&nbsp;</td></tr>
+<tr><td/> <td nowrap>ALU result:&nbsp;</td> <td nowrap>15&nbsp;</td></tr>
+<tr><td/> <td nowrap>Zero:&nbsp;</td> <td nowrap>0&nbsp;</td></tr>
+<tr><td/> <td nowrap>Branch target:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>WB stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (generated)&nbsp;</td></tr>
+<tr><td/> <td nowrap>Result:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+</tbody>
+</table><p/>
+<table rules=groups frame=box width="100%">
+<thead><tr><th colspan=8 align=left nowrap>Register File</th></tr></thead>
+<tbody>
+<tr><td nowrap>R0 (zero)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R8 (t0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R16 (s0)&nbsp;</td> <td nowrap>= 15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R24 (t8)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R1 (at)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R9 (t1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R17 (s1)&nbsp;</td> <td nowrap>= 15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R25 (t9)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R2 (v0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R10 (t2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R18 (s2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R26 (k0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R3 (v1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R11 (t3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R19 (s3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R27 (k1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R4 (a0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R12 (t4)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R20 (s4)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R28 (gp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R5 (a1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R13 (t5)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R21 (s5)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R29 (sp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R6 (a2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R14 (t6)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R22 (s6)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R30 (fp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R7 (a3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R15 (t7)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R23 (s7)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R31 (ra)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+</tbody>
+</table>
+</td> <td>&nbsp;</td>
+<td>
+<table rules=groups frame=box width="100%">
+<thead><tr><th colspan=3 align=left>Cycle 9 (3 retired)</th> </tr></thead>
+<tbody>
+<tr><td nowrap>IF stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (generated)&nbsp;</td></tr>
+<tr><td/> <td nowrap>PC:&nbsp;</td> <td nowrap>0x400020&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>ID stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (generated)&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>Ex stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>syscall</code> (line 14)&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rs</i> value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rt</i> value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap>Immediate value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>Mem stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>addi $v0, $zero, 10</code> (line 13)&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rt</i> value:&nbsp;</td> <td nowrap>0&nbsp;</td></tr>
+<tr><td/> <td nowrap>ALU result:&nbsp;</td> <td nowrap>10&nbsp;</td></tr>
+<tr><td/> <td nowrap>Zero:&nbsp;</td> <td nowrap>0&nbsp;</td></tr>
+<tr><td/> <td nowrap>Branch target:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>WB stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>and $s2, $s0, $s1</code> (line 11)&nbsp;</td></tr>
+<tr><td/> <td nowrap>Result:&nbsp;</td> <td nowrap>15&nbsp;</td></tr>
+</tbody>
+</table><p/>
+<table rules=groups frame=box width="100%">
+<thead><tr><th colspan=8 align=left nowrap>Register File</th></tr></thead>
+<tbody>
+<tr><td nowrap>R0 (zero)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R8 (t0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R16 (s0)&nbsp;</td> <td nowrap>= 15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R24 (t8)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R1 (at)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R9 (t1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R17 (s1)&nbsp;</td> <td nowrap>= 15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R25 (t9)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R2 (v0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R10 (t2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R18 (s2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R26 (k0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R3 (v1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R11 (t3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R19 (s3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R27 (k1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R4 (a0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R12 (t4)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R20 (s4)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R28 (gp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R5 (a1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R13 (t5)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R21 (s5)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R29 (sp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R6 (a2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R14 (t6)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R22 (s6)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R30 (fp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R7 (a3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R15 (t7)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R23 (s7)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R31 (ra)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+</tbody>
+</table>
+</td> <td>&nbsp;</td>
+<td>
+<table rules=groups frame=box width="100%">
+<thead><tr><th colspan=3 align=left>Cycle 10 (4 retired)</th> </tr></thead>
+<tbody>
+<tr><td nowrap>IF stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (generated)&nbsp;</td></tr>
+<tr><td/> <td nowrap>PC:&nbsp;</td> <td nowrap>0x400024&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>ID stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (generated)&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>Ex stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (generated)&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rs</i> value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rt</i> value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap>Immediate value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>Mem stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>syscall</code> (line 14)&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rt</i> value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap>ALU result:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap>Zero:&nbsp;</td> <td nowrap>0&nbsp;</td></tr>
+<tr><td/> <td nowrap>Branch target:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>WB stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>addi $v0, $zero, 10</code> (line 13)&nbsp;</td></tr>
+<tr><td/> <td nowrap>Result:&nbsp;</td> <td nowrap>10&nbsp;</td></tr>
+</tbody>
+</table><p/>
+<table rules=groups frame=box width="100%">
+<thead><tr><th colspan=8 align=left nowrap>Register File</th></tr></thead>
+<tbody>
+<tr><td nowrap>R0 (zero)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R8 (t0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R16 (s0)&nbsp;</td> <td nowrap>= 15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R24 (t8)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R1 (at)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R9 (t1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R17 (s1)&nbsp;</td> <td nowrap>= 15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R25 (t9)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R2 (v0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R10 (t2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R18 (s2)&nbsp;</td> <td nowrap>= 15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R26 (k0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R3 (v1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R11 (t3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R19 (s3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R27 (k1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R4 (a0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R12 (t4)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R20 (s4)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R28 (gp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R5 (a1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R13 (t5)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R21 (s5)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R29 (sp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R6 (a2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R14 (t6)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R22 (s6)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R30 (fp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R7 (a3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R15 (t7)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R23 (s7)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R31 (ra)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+</tbody>
+</table>
+</td> <td>&nbsp;</td>
+<td>
+<table rules=groups frame=box width="100%">
+<thead><tr><th colspan=3 align=left>Cycle 11 (5 retired)</th> </tr></thead>
+<tbody>
+<tr><td nowrap>IF stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (generated)&nbsp;</td></tr>
+<tr><td/> <td nowrap>PC:&nbsp;</td> <td nowrap>0x400028&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>ID stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (generated)&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>Ex stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (generated)&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rs</i> value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rt</i> value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap>Immediate value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>Mem stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>nop</code> (generated)&nbsp;</td></tr>
+<tr><td/> <td nowrap><i>rt</i> value:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap>ALU result:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+<tr><td/> <td nowrap>Zero:&nbsp;</td> <td nowrap>0&nbsp;</td></tr>
+<tr><td/> <td nowrap>Branch target:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+</tbody>
+<tbody>
+<tr><td nowrap>WB stage:</td><td/><td/></tr>
+<tr><td/> <td nowrap>Instruction:&nbsp;</td> <td nowrap><code>syscall</code> (line 14)&nbsp;</td></tr>
+<tr><td/> <td nowrap>Result:&nbsp;</td> <td nowrap>-1&nbsp;</td></tr>
+</tbody>
+</table><p/>
+<table rules=groups frame=box width="100%">
+<thead><tr><th colspan=8 align=left nowrap>Register File</th></tr></thead>
+<tbody>
+<tr><td nowrap>R0 (zero)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R8 (t0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R16 (s0)&nbsp;</td> <td nowrap>= 15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R24 (t8)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R1 (at)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R9 (t1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R17 (s1)&nbsp;</td> <td nowrap>= 15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R25 (t9)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R2 (v0)&nbsp;</td> <td nowrap>= 10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R10 (t2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R18 (s2)&nbsp;</td> <td nowrap>= 15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R26 (k0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R3 (v1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R11 (t3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R19 (s3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R27 (k1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R4 (a0)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R12 (t4)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R20 (s4)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R28 (gp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R5 (a1)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R13 (t5)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R21 (s5)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R29 (sp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R6 (a2)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R14 (t6)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R22 (s6)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R30 (fp)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td nowrap>R7 (a3)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R15 (t7)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R23 (s7)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td nowrap>R31 (ra)&nbsp;</td> <td nowrap>= 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+</tbody>
+</table>
+</td> <td>&nbsp;</td>
+</tr></table><p/>
+Time &rarr;
+</body>
+</html>
