@@ -57,11 +57,6 @@ static void ComputeNextIDStage(IDStage* next_id)
 // stage to use in the next clock cycle. next_ex is an output parameter for the computed state.
 static void ComputeNextExStage(ExStage* next_ex)
 {
-	// Since the j instruction has not been implemented yet (this is your job),
-	// just terminate the program if one appears
-
-
-
 	// Read the right registers
 	next_ex->instr = id_stage.instr;
 	if (id_stage.instr.rs != DONT_CARE)
