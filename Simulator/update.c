@@ -16,9 +16,15 @@
  // stage to use in the next clock cycle. next_if is an output parameter for the computed state.
 static void ComputeNextIFStage(IFStage* next_if)
 {
+	// If there is a jump instruction in the ID stage select the jump target as the next PC
+	if(id_stage.instr.type == J)
+	{
+		next_if->pc = id_stage.instr.imm;
+
+	}
 	// If there is a branch instruction in the Mem stage, and the branch condition
 	// is true, select the branch target as the next PC
-	if ((mem_stage.instr.type == BEQ && mem_stage.zero)
+	else if ((mem_stage.instr.type == BEQ && mem_stage.zero)
 		|| (mem_stage.instr.type == BNE && !mem_stage.zero))
 	{
 		next_if->pc = mem_stage.branch_target;
@@ -37,8 +43,24 @@ static void ComputeNextIFStage(IFStage* next_if)
 // stage to use in the next clock cycle. next_id is an output parameter for the computed state.
 static void ComputeNextIDStage(IDStage* next_id)
 {
+	if(id_stage.instr.type == J) 
+	{
+		/**
+		 * If the instruction decoded now is a jump, the one
+		 * currently in the IF stage shouldn't make it into the ID
+		 * stage (since it is the one after the jump), so we replace 
+		 * it by a NOP.
+		 **/
+		next_id->instr.imm = DONT_CARE;
+		next_id->instr.line_nr = DONT_CARE;
+		next_id->instr.rd = DONT_CARE;
+		next_id->instr.rs = DONT_CARE;
+		next_id->instr.rt = DONT_CARE;
+		next_id->instr.type = NOP;
+	}
 	// Update the ID stage with the instruction fetched in the IF stage
-	next_id->instr = ReadFromInstrMemory(if_stage.pc);
+	else 
+		next_id->instr = ReadFromInstrMemory(if_stage.pc);
 }
 
 // Based on the current state of the pipeline, compute a new state for the Ex 
@@ -48,8 +70,6 @@ static void ComputeNextExStage(ExStage* next_ex)
 	// Since the j instruction has not been implemented yet (this is your job),
 	// just terminate the program if one appears
 
-	if (id_stage.instr.type == J)
-		STATIC_MIPS_ERROR("At line %d: The j instruction has not been implemented yet", id_stage.instr.line_nr)
 
 
 	// Read the right registers
