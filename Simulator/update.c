@@ -45,18 +45,8 @@ static void ComputeNextIDStage(IDStage* next_id)
 {
 	if(id_stage.instr.type == J) 
 	{
-		/**
-		 * If the instruction decoded now is a jump, the one
-		 * currently in the IF stage shouldn't make it into the ID
-		 * stage (since it is the one after the jump), so we replace 
-		 * it by a NOP.
-		 **/
-		next_id->instr.imm = DONT_CARE;
-		next_id->instr.line_nr = DONT_CARE;
-		next_id->instr.rd = DONT_CARE;
-		next_id->instr.rs = DONT_CARE;
-		next_id->instr.rt = DONT_CARE;
-		next_id->instr.type = NOP;
+		// we cancel the instruction in the next_id, because it is the one just after the jump
+		ClearIDStage(next_id);
 	}
 	// Update the ID stage with the instruction fetched in the IF stage
 	else 
