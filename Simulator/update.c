@@ -239,22 +239,15 @@ static void HandleHazards(IFStage* next_if, IDStage* next_id, ExStage* next_ex,
 	int rs, rt;
 	int data_hazard = 0;
 	
-	// Check for a branch hazard, i.e. if either of the instructions currently in ID
-	// or Ex is a branch instruction
-	if (id_stage.instr.type == BEQ || id_stage.instr.type == BNE ||
-		ex_stage.instr.type == BEQ || ex_stage.instr.type == BNE)
-	{
-		// Reset the future IF stage to the same state as in the current clock cycle,
-		// and make the future ID stage a bubble
-		*next_if = if_stage;
-		ClearIDStage(next_id);
-	}
-
 	// If there is taken branch in the mem stage, the instruction fetched in the
 	// IF stage (which is from the non-taken branch) should be zeroed out
 	if ((mem_stage.instr.type == BEQ && mem_stage.zero) ||
 		(mem_stage.instr.type == BNE && !mem_stage.zero))
+	{
 		ClearIDStage(next_id);
+		ClearExStage(next_ex);
+		ClearMemStage(next_mem);
+	}
 
 	// Get the register(s) read by the instruction in ID
 	GetRegsReadByInstr(&id_stage.instr, &rs, &rt);
