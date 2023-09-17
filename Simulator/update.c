@@ -261,26 +261,33 @@ static void HandleHazards(IFStage* next_if, IDStage* next_id, ExStage* next_ex,
 
 	// Check if the instruction in Mem has any of the registers read by the
 	// instruction in ID as destination register
-	if ((rs != DONT_CARE && GetRegWrittenByInstr(&mem_stage.instr) == rs) ||
-		(rt != DONT_CARE && GetRegWrittenByInstr(&mem_stage.instr) == rt))
-		data_hazard = 1;
+	if (rs != DONT_CARE && GetRegWrittenByInstr(&mem_stage.instr) == rs)
+		next_ex->rs_value = next_wb->result;
+	else if (rt != DONT_CARE && GetRegWrittenByInstr(&mem_stage.instr) == rt)
+		next_ex->rt_value = next_wb->result;
 
 	// Check if the instruction in Ex has any of the registers read by the
 	// instruction in ID as destination register
 	if ((rs != DONT_CARE && GetRegWrittenByInstr(&ex_stage.instr) == rs) ||
 		(rt != DONT_CARE && GetRegWrittenByInstr(&ex_stage.instr) == rt))
-		data_hazard = 1;
-
-	// If a data hazard is present
-	if (data_hazard)
 	{
-		// Reset the future IF and ID stages to the same states as in the current clock cycle,
-		// and make the future Ex stage a bubble
-		*next_if = if_stage;
-		*next_id = id_stage;
-		ClearExStage(next_ex);
-	}
 
+		if(GetInstrCategory(ex_stage.instr.type)==LOAD)
+		{
+			// Reset the future IF and ID stages to the same states as in the current clock cycle,
+			// and make the future Ex stage a bubble
+			*next_if = if_stage;
+			*next_id = id_stage;
+			ClearExStage(next_ex);
+		}
+		else 
+		{
+			if(rs != DONT_CARE && GetRegWrittenByInstr(&ex_stage.instr) == rs) 
+				next_ex->rs_value = next_mem->alu_result;
+			else 
+				next_ex->rt_value = next_mem->alu_result;
+		}
+	}
 }
 
 static void UpdateRegisterFile()
