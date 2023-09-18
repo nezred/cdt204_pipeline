@@ -222,7 +222,6 @@ static void HandleHazards(IFStage* next_if, IDStage* next_id, ExStage* next_ex,
 	MemStage* next_mem, WBStage* next_wb)
 {
 	int rs, rt;
-	int data_hazard = 0;
 	
 	// If there is taken branch in the mem stage, the instruction fetched in the
 	// IF stage (which is from the non-taken branch) should be zeroed out
